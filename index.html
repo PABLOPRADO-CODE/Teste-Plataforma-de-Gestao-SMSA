@@ -5,8 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMSA/PBH - Gestão Acadêmica</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
+      /* Assegura que o CSS compilado pelo Tailwind/PostCSS será carregado.
+         Geralmente, você deve ter um arquivo CSS de entrada (ex: index.css ou main.css)
+         que importa as diretivas @tailwind, e este arquivo deve ser importado
+         no seu index.tsx. Manter o estilo global é bom, mas o Tailwind via CDN
+         deve ser removido.
+      */
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
       
       body {
@@ -40,11 +46,6 @@
     </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
-</html>
-
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
